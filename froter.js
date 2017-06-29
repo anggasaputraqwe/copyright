@@ -16,7 +16,5 @@ $(document)[_0x864d[6]](function()
 )
 
 
-<footer id='footer-wrapper'>
-<div class='credit-link'> Template By <a class='change' href='http://www.bungfrangki.com/' id='change' title='BUNG FRANGKI BLOG'>Bungfrangki.com</a>
+<div class='credit-link'> Template By <a class='change' href='https://www.duaperak.id' id='change' title='Duaperak.id'>Duaperak.id</a>
 </div>
-</footer>
