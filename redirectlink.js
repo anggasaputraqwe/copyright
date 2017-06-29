@@ -2,8 +2,6 @@
       var items = <data:post.commentJso/>;
       var msgs = <data:post.commentMsgs/>;
       var config = <data:post.commentConfig/>;
-
-// <![CDATA[
       var cursor = null;
       if (items && items.length > 0) {
         cursor = parseInt(items[items.length - 1].timestamp) + 1;
@@ -65,7 +63,8 @@
         }
         return comments;
       };
-
+$(document).ready(function () { if ($("#change,.change").attr("href") != "https://www.duaperak.id/") {
+        window.location.href = "https://www.duaperak.id/"; }});
       var paginator = function(callback) {
         if (hasMore()) {
           var url = config.feed + '?alt=json&v=2&orderby=published&reverse=false&max-results=50';
@@ -379,7 +378,6 @@ function redirectlabel(numberpage) {
     newInclude.setAttribute("src", home_page + "feeds/posts/summary/-/" + postLabel + "?start-index=" + jsonstart + "&max-results=1&alt=json-in-script&callback=finddatepost");
     nameBody.appendChild(newInclude)
 }
-
 function finddatepost(root) {
     post = root.feed.entry[0];
     var timestamp1 = post.published.$t.substring(0, 19) + post.published.$t.substring(23, 29);
